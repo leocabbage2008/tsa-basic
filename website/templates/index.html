@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,8 +21,8 @@
       rel="stylesheet"
     />
 
-    <link href="css/style.css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/jpg" href="/images/lantern1.PNG" />
+    <link href="{% static '/style.css' %}" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/jpg" href="{% static '/images/lantern.png' %}" />
     <title>Lantern Festival</title>
   </head>
   <body>
@@ -29,7 +31,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="/images/lantern1.png"
+            src="{% static '/images/lantern1.PNG' %}"
             width="30"
             class="d-inline-block align-text-top"
           />
